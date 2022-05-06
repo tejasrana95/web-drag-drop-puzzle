@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css
+  "
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-4 dropzone"
+          id="drop1"
+          data-value="block_o"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <span>O</span>
+        </div>
+        <div
+          class="col-4 dropzone"
+          id="drop2"
+          data-value="block_x"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <span>X</span>
+        </div>
+        <div
+          class="col-4 dropzone"
+          id="drop3"
+          data-value="block_x"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        >
+          <span>X</span>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div
+          class="col-4 dropzone"
+          id="drag1"
+          data-value="block_x"
+          draggable="true"
+          ondragstart="drag(event)"
+        >
+          <span>X</span>
+        </div>
+        <div
+          class="col-4 dropzone"
+          id="drag2"
+          data-value="block_o"
+          draggable="true"
+          ondragstart="drag(event)"
+        >
+          <span>O</span>
+        </div>
+        <div
+          class="col-4 dropzone"
+          id="drag3"
+          data-value="block_x"
+          draggable="true"
+          ondragstart="drag(event)"
+        >
+          <span>X</span>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
